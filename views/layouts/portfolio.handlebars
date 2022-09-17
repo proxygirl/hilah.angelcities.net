@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portfolio</title>
+    <link href="../../bootstrap.min.css" rel="stylesheet">
+    <link href="../../style.css" rel="stylesheet">
+  </head>
+  <body class="">
+      
+    <div class="snow w-100 h-100"></div>
+    <div class="background w-100 h-100"></div>
+    
+    <div class="h-100 d-flex container">
+
+        <div class=" d-flex flex-column flex-grow-1">    
+
+            <header class="mb-auto py-3">
+                <a class="button p-1" onclick="history.back()">&lt;- back</a>
+            </header>         
+            <div class="content">
+                {{{ body }}}
+            </div>
+            <footer class="mt-auto p-3 text-center">
+                <small>&copy; Copyright 2022, hilah katherine thomas</small>
+            </footer>        
+
+        </div>        
+        
+    </div>
+    <audio id="click" src="../../sounds/click.mp3" type="audio/mp3"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<!--
+    <script>
+        document.onclick = clickSound;
+
+        function clickSound() {
+            let sound = document.getElementById("click");
+            sound.volume = 0.15;
+            sound.play();
+        }
+    </script>      
+-->
+    
+  </body>
+</html>
