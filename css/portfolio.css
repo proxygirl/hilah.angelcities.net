@@ -1,0 +1,67 @@
+:root {
+    --primary: black;
+    --bg-transparent: #f0f8ffdb;
+}
+
+a {
+    color: blue;
+    cursor: pointer;
+}
+
+a:hover {
+    background: black;
+    color: white;
+}
+
+img {
+    border: 1px dotted var(--primary);
+}
+
+.list img:hover span {
+    background: black;
+    color: white;
+}
+
+
+.bg.paper {
+    background-image: url(../images/backgrounds/bg.jpg);
+    background-size: 50%;
+    z-index: -2;
+    opacity: 0.75;    
+}
+
+.bg.snow {
+    background-image: url("../images/backgrounds/snow_transparent.gif");
+    z-index: -1;
+    opacity: 0.2;    
+}
+
+@media (max-width: 767px) {
+  .bg.paper {
+    background-size:130%;
+  }   
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .bg.paper {
+    background-size:100%;
+  } 
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .bg.paper {
+    background-size:80%;
+  } 
+     
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .bg.paper {
+    background-size:60%;
+  }
+  
+}

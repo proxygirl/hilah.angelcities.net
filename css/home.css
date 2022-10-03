@@ -1,0 +1,89 @@
+:root {
+    --primary: white;
+    --bg-transparent: #000000c9;     
+}
+
+body {color: white;}
+
+header {
+    overflow: hidden;
+}
+
+a {
+    color: lime;
+}
+
+a:hover {
+    color: black;
+    background: white;
+}
+
+.space {
+    background-image: url("../images/backgrounds/space.gif");
+    z-index: -1;
+/*    opacity: 0.2;        */
+}
+
+.logo {
+    height: 125px;
+    font-size: 2em;
+    transform-style: preserve-3d;
+    animation: spin 15s linear infinite;
+/*
+    position: absolute;
+    left: 50%;
+*/
+    width: 100%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(-90deg) rotate(0);
+    }
+    
+    50% {
+        transform: rotateX(-105deg) rotate(-180deg);
+    }
+    
+    100% {
+        transform: rotateX(-90deg) rotate(-360deg);
+    }    
+}
+
+.logo span {
+    padding: 0px 5px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    position: absolute;
+    color: white;
+    background: var(--bg-transparent);
+    top: 50%;
+    left: 50%;
+/*    animation: background 5s linear infinite;*/
+    transform: translate(-50%, -50%)
+               rotate(calc((var(--char-index) * 16.36deg))) 
+               translateY(-107px) 
+               rotateX(90deg)  
+}
+
+@keyframes background {
+    0% {
+        background: red;
+    }
+    20% {
+        background: yellow;
+    }
+    40% {
+        background: green;
+    }
+    60% {
+        background: blue;
+    }
+    80% {
+        background: indigo;
+    }    
+    100% {
+        background: red;
+    }    
+}
+

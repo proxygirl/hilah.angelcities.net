@@ -1,0 +1,158 @@
+@font-face {
+  font-family: azeret;
+  src: url(/fonts/AzeretMono-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: azeret;
+  src: url(/fonts/AzeretMono-Bold.ttf);
+  font-weight: 700;
+}
+
+:root {
+    --width: 768px;
+    --width-large: 1024px;
+    height: 100%;    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    font-family: azeret;
+}
+
+header{
+    padding: 0.25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    padding: 0.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    max-width: var(--width);
+    padding: 1em;
+}
+
+.container.large {
+    max-width: var(--width-large);
+/*    min-width: var(--width);*/
+}
+
+.content {
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+}
+
+.container.large .window {
+    max-width: calc(var(--width-large) / 2);
+}
+.window {
+    background: var(--bg-transparent);
+    border: 1px dotted var(--primary);
+    padding: 1em;
+    margin: 2em 0em;
+}
+
+.bg {
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+/* paragraph heading */
+h5 {
+    font-size: medium;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+ul {
+    list-style-type: "✼"; 
+    padding-left: 0.75em;
+}
+
+li {
+    padding-left: 0.5em;
+}
+
+hr {
+    margin: 1em 0;
+}
+
+/*********************/
+
+.diptych {
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 2em;
+    
+}
+
+img.photo {
+    max-width: 100%;
+    height: auto;
+}
+
+img.icon {
+    position: relative;
+    top: 3px;
+    border: none;
+    width: 19px;
+    height: 19px;
+}
+
+.center{
+    text-align: center;
+}
+
+.text {
+    padding: .25em 1em;
+}
+
+.paragraph {
+    text-indent: 1em;
+}
+
+.paragraph p {
+    margin: 2em 0em;
+}
+
+.list img {
+/*
+    max-width: 256px;
+    max-height: 256px;
+*/
+    margin-bottom: 1em;
+}
+

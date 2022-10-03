@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://example.org/portfolio/archive/stone/</loc>
+  </url><url>
+    <loc>http://example.org/portfolio/archive/dolls/</loc>
+  </url><url>
+    <loc>http://example.org/portfolio/archive/still-life/</loc>
+  </url><url>
+    <loc>http://example.org/portfolio/archive/</loc>
+    <lastmod>2022-09-18T14:17:02-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/portfolio/artist-statement/</loc>
+    <lastmod>2022-09-18T14:17:02-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/portfolio/bio/</loc>
+    <lastmod>2022-09-18T14:17:02-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/portfolio/girlhood/</loc>
+    <lastmod>2022-09-18T14:17:02-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2022-09-18T14:17:02-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/portfolio/</loc>
+    <lastmod>2022-09-18T14:17:02-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/portfolio/cv/</loc>
+    <lastmod>2022-09-18T14:17:02-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/portfolio/resume/</loc>
+    <lastmod>2022-09-18T14:17:02-05:00</lastmod>
+  </url>
+</urlset>
