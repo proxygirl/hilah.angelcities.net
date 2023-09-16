@@ -1,6 +1,24 @@
 ---
 title: bracelets
 items:
+  - title: '44'
+    file: /uploads/bracelet-44.jpg
+  - title: '43'
+    file: /uploads/bracelet-43.jpg
+  - title: '42'
+    file: /uploads/bracelet-42.jpg
+  - title: '41'
+    file: /uploads/bracelet-41.jpg
+  - title: '40'
+    file: /uploads/bracelet-40.jpg
+  - title: '39'
+    file: /uploads/bracelet-39.jpg
+  - title: '38'
+    file: /uploads/bracelet-38.jpg
+  - title: '37'
+    file: /uploads/bracelet-37.jpg
+  - title: '36'
+    file: /uploads/bracelet-36.jpg
   - title: '35'
     file: /uploads/bracelet-35.jpg
   - title: '34'
@@ -72,4 +90,5 @@ items:
   - title: '1'
     file: /uploads/bracelet-01.jpg
 ---
+
 
