@@ -1,0 +1,5 @@
+baseURL = 'https://hilah-blog.netlify.app'
+languageCode = 'en-us'
+title = 'hilah'
+theme = 'my-theme'
+assetDir = 'static'

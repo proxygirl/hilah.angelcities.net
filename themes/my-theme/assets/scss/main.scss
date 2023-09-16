@@ -1,0 +1,36 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/typography";
+@import "base/reset";
+@import "components/post";
+@import "layout/header";
+
+@import "pages/home";
+@import "pages/page";
+@import "pages/post";
+
+html {
+    @include flex(column, nowrap, start);
+    scroll-behavior: smooth;
+}
+
+body {
+    @include flex(column);
+    min-height: 100vh;
+}
+
+.wrapper {
+    @include flex(row, nowrap, normal, normal, 1);
+    gap: 2em;
+    max-width: 968px;
+}
+
+aside {
+    @include flex(column, nowrap, normal, normal, 1);
+    border-right: 1px solid black;
+    padding: 2em;
+}
+
+nav {
+    flex: 1;
+}
