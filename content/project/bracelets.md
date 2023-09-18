@@ -1,94 +1,126 @@
 ---
 title: bracelets
 items:
+  - title: '60'
+    file: /uploads/bracelets/bracelet-60.jpg
+  - title: '59'
+    file: /uploads/bracelets/bracelet-59.jpg
+  - title: '58'
+    file: /uploads/bracelets/bracelet-58.jpg
+  - title: '57'
+    file: /uploads/bracelets/bracelet-57.jpg
+  - title: '56'
+    file: /uploads/bracelets/bracelet-56.jpg
+  - title: '55'
+    file: /uploads/bracelets/bracelet-55.jpg
+  - title: '54'
+    file: /uploads/bracelets/bracelet-54.jpg
+  - title: '53'
+    file: /uploads/bracelets/bracelet-53.jpg
+  - title: '52'
+    file: /uploads/bracelets/bracelet-52.jpg
+  - title: '51'
+    file: /uploads/bracelets/bracelet-51.jpg
+  - title: '50'
+    file: /uploads/bracelets/bracelet-50.jpg
+  - title: '49'
+    file: /uploads/bracelets/bracelet-49.jpg
+  - title: '48'
+    file: /uploads/bracelets/bracelet-48.jpg
+  - title: '47'
+    file: /uploads/bracelets/bracelet-47.jpg
+  - title: '46'
+    file: /uploads/bracelets/bracelet-46.jpg
+  - title: '45'
+    file: /uploads/bracelets/bracelet-45.jpg
   - title: '44'
-    file: /uploads/bracelet-44.jpg
+    file: /uploads/bracelets/bracelet-44.jpg
   - title: '43'
-    file: /uploads/bracelet-43.jpg
+    file: /uploads/bracelets/bracelet-43.jpg
   - title: '42'
-    file: /uploads/bracelet-42.jpg
+    file: /uploads/bracelets/bracelet-42.jpg
   - title: '41'
-    file: /uploads/bracelet-41.jpg
+    file: /uploads/bracelets/bracelet-41.jpg
   - title: '40'
-    file: /uploads/bracelet-40.jpg
+    file: /uploads/bracelets/bracelet-40.jpg
   - title: '39'
-    file: /uploads/bracelet-39.jpg
+    file: /uploads/bracelets/bracelet-39.jpg
   - title: '38'
-    file: /uploads/bracelet-38.jpg
+    file: /uploads/bracelets/bracelet-38.jpg
   - title: '37'
-    file: /uploads/bracelet-37.jpg
+    file: /uploads/bracelets/bracelet-37.jpg
   - title: '36'
-    file: /uploads/bracelet-36.jpg
+    file: /uploads/bracelets/bracelet-36.jpg
   - title: '35'
-    file: /uploads/bracelet-35.jpg
+    file: /uploads/bracelets/bracelet-35.jpg
   - title: '34'
-    file: /uploads/bracelet-34.jpg
+    file: /uploads/bracelets/bracelet-34.jpg
   - title: '33'
-    file: /uploads/bracelet-33.jpg
+    file: /uploads/bracelets/bracelet-33.jpg
   - title: '32'
-    file: /uploads/bracelet-32.jpg
+    file: /uploads/bracelets/bracelet-32.jpg
   - title: '31'
-    file: /uploads/bracelet-31.jpg
+    file: /uploads/bracelets/bracelet-31.jpg
   - title: '30'
-    file: /uploads/bracelet-30.jpg
+    file: /uploads/bracelets/bracelet-30.jpg
   - title: '29'
-    file: /uploads/bracelet-29.jpg
+    file: /uploads/bracelets/bracelet-29.jpg
   - title: '28'
-    file: /uploads/bracelet-28.jpg
+    file: /uploads/bracelets/bracelet-28.jpg
   - title: '27'
-    file: /uploads/bracelet-27.jpg
+    file: /uploads/bracelets/bracelet-27.jpg
   - title: '26'
-    file: /uploads/bracelet-26.jpg
+    file: /uploads/bracelets/bracelet-26.jpg
   - title: '25'
-    file: /uploads/bracelet-25.jpg
+    file: /uploads/bracelets/bracelet-25.jpg
   - title: '24'
-    file: /uploads/bracelet-24.jpg
+    file: /uploads/bracelets/bracelet-24.jpg
   - title: '23'
-    file: /uploads/bracelet-23.jpg
+    file: /uploads/bracelets/bracelet-23.jpg
   - title: '22'
-    file: /uploads/bracelet-22.jpg
+    file: /uploads/bracelets/bracelet-22.jpg
   - title: '21'
-    file: /uploads/bracelet-21.jpg
+    file: /uploads/bracelets/bracelet-21.jpg
   - title: '20'
-    file: /uploads/bracelet-20.jpg
+    file: /uploads/bracelets/bracelet-20.jpg
   - title: '19'
-    file: /uploads/bracelet-19.jpg
+    file: /uploads/bracelets/bracelet-19.jpg
   - title: '18'
-    file: /uploads/bracelet-18.jpg
+    file: /uploads/bracelets/bracelet-18.jpg
   - title: '17'
-    file: /uploads/bracelet-17.jpg
+    file: /uploads/bracelets/bracelet-17.jpg
   - title: '16'
-    file: /uploads/bracelet-16.jpg
+    file: /uploads/bracelets/bracelet-16.jpg
   - title: '15'
-    file: /uploads/bracelet-15.jpg
+    file: /uploads/bracelets/bracelet-15.jpg
   - title: '14'
-    file: /uploads/bracelet-14.jpg
+    file: /uploads/bracelets/bracelet-14.jpg
   - title: '13'
-    file: /uploads/bracelet-13.jpg
+    file: /uploads/bracelets/bracelet-13.jpg
   - title: '12'
-    file: /uploads/bracelet-12.jpg
+    file: /uploads/bracelets/bracelet-12.jpg
   - title: '11'
-    file: /uploads/bracelet-11.jpg
+    file: /uploads/bracelets/bracelet-11.jpg
   - title: '10'
-    file: /uploads/bracelet-10.jpg
+    file: /uploads/bracelets/bracelet-10.jpg
   - title: '9'
-    file: /uploads/bracelet-09.jpg
+    file: /uploads/bracelets/bracelet-09.jpg
   - title: '8'
-    file: /uploads/bracelet-08.jpg
+    file: /uploads/bracelets/bracelet-08.jpg
   - title: '7'
-    file: /uploads/bracelet-07.jpg
+    file: /uploads/bracelets/bracelet-07.jpg
   - title: '6'
-    file: /uploads/bracelet-06.jpg
+    file: /uploads/bracelets/bracelet-06.jpg
   - title: '5'
-    file: /uploads/bracelet-05.jpg
+    file: /uploads/bracelets/bracelet-05.jpg
   - title: '4'
-    file: /uploads/bracelet-04.jpg
+    file: /uploads/bracelets/bracelet-04.jpg
   - title: '3'
-    file: /uploads/bracelet-03.jpg
+    file: /uploads/bracelets/bracelet-03.jpg
   - title: '2'
-    file: /uploads/bracelet-02.jpg
+    file: /uploads/bracelets/bracelet-02.jpg
   - title: '1'
-    file: /uploads/bracelet-01.jpg
+    file: /uploads/bracelets/bracelet-01.jpg
 ---
 
-
+an assortment of handmade bracelets.

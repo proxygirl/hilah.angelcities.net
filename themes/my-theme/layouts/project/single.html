@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="project">
+   {{ range (shuffle (.Site.GetPage "project/bracelets").Params.items) }}
+    <a href="{{ (resources.Get .file).RelPermalink }}">
+        <img src='{{ ((resources.Get .file).Resize "x600 webp").RelPermalink }}' title="bracelet {{ .title }}" loading="lazy" />
+    </a>
+   {{ end }}
+</div>
+{{ end }}

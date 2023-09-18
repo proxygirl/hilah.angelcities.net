@@ -1,1 +1,11 @@
-navigation
+{{ $current := .RelPermalink}}
+<ul>
+        <li>
+            <a href="/about">about</a>
+        </li>
+        {{ range (where .Site.RegularPages "Section" "project") }}
+            <li>
+                <a class='{{ cond (eq $current .RelPermalink) "current" "" }}' href="{{ .RelPermalink }}">{{.Title | lower }}</a>
+            </li>
+        {{ end }}
+</ul>

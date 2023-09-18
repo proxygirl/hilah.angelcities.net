@@ -2,7 +2,7 @@ import { Collection } from "tinacms"
 
 export const project: Collection = {
         name: "project",
-        label: "Project",
+        label: "Projects",
         path: "content/project",
         fields: [
           {
@@ -12,6 +12,12 @@ export const project: Collection = {
             isTitle: true,
             required: true,
           },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
+          },          
           {
             type: "object",
             name: "items",

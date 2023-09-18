@@ -2,6 +2,7 @@ import { defineConfig } from "tinacms";
 
 // Import schemas from separate files
 import { project } from "./schema/project";
+import { post } from "./schema/post";
 
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
@@ -21,6 +22,6 @@ export default defineConfig({
     },
   },
   schema: {
-    collections: [project],
+    collections: [post, project],
   },
 });

@@ -10,27 +10,108 @@
 @import "pages/post";
 
 html {
-    @include flex(column, nowrap, start);
+    @include flex(row, nowrap, start);
     scroll-behavior: smooth;
+
 }
 
 body {
-    @include flex(column);
+    @include flex(column, nowrap, normal, normal, 1);
     min-height: 100vh;
+    max-width: 986px;
+    // background: linear-gradient(to top, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    background-attachment: fixed;
 }
 
 .wrapper {
-    @include flex(row, nowrap, normal, normal, 1);
-    gap: 2em;
-    max-width: 968px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    "aside main";
+}
+
+.nav-wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    } 
+    .nav-wrapper {
+        position: initial;
+    }
+    
 }
 
 aside {
-    @include flex(column, nowrap, normal, normal, 1);
-    border-right: 1px solid black;
-    padding: 2em;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1.5em;
+    grid-area: aside;
 }
 
-nav {
-    flex: 1;
+header {
+    @include flex(column, nowrap, normal, normal, 1);
+    gap: 0.5em;
+}
+
+main {
+    padding: 1.5em;
+    grid-area: main;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 1em;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    
+}
+
+nav > ul li {
+    list-style: "❀";
+    color: blue;
+    list-style-position: inside;
+}
+.current {
+    font-weight: bold;
+}
+
+nav a {
+
+}
+
+.details {
+    @include flex(column, nowrap, normal, normal, 1);    
+}
+
+.posts {
+    @include flex(column, nowrap, normal, normal, 1);
+    gap: 1em;
+}
+
+.post {
+    @include flex(column, nowrap, normal, normal, 1);
+    max-width: 400px; 
+    gap: 1em;
+    padding: 1em;
+    border: 1px solid lightgrey;
+    &-header {
+        @include flex(row, nowrap, center, space-between, 1); 
+        border-bottom: 1px solid lightgrey;
+        padding-bottom: 0.25em;
+    }
+    &-main {
+        @include flex(column, nowrap, normal, normal, 1); 
+        gap: 1em;
+    }
 }

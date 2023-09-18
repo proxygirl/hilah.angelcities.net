@@ -3,14 +3,12 @@
     {{ partial "head.html" . }}
     <body class='page-{{ cond ( .IsHome ) "home" .Type }}'>
         <div class='wrapper'>
-            
             <aside>
-                <header> {{ partial "header.html" . }} </header>
-                <nav> {{ partial "navigation" . }} </nav>
-                <footer> {{ partial "footer.html" . }} </footer>
+                <div class="nav-wrapper">
+                    <header> {{ partial "header.html" . }} </header>
+                </div>
             </aside>
             <main> {{ block "main" .  }}{{ end }} </main>
-            
         </div>
     </body>
 </html>

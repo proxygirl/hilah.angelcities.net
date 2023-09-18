@@ -1,1 +1,17 @@
-hilah
+<a href="/">✿ hilah.angelcities.net</a>
+<div class="details">
+    <span> hilah katherine t. </span>
+    <span> 26 / f / midwest, us </span>
+</div>
+<nav>
+
+    {{ $current := .RelPermalink}}
+    <ul>
+            {{ range (where .Site.RegularPages "Section" "project") }}
+                <li>
+                    <a class='{{ cond (eq $current .RelPermalink) "current" "" }}' href="{{ .RelPermalink }}">{{.Title | lower }}</a>
+                </li>
+            {{ end }}
+    </ul>
+
+</nav>
