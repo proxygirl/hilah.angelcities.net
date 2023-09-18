@@ -40,6 +40,11 @@ export const project: Collection = {
                 label: "File",
               }
             ],
-          }
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+          },          
         ],
 }

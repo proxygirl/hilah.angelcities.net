@@ -4,9 +4,7 @@
     <body class='page-{{ cond ( .IsHome ) "home" .Type }}'>
         <div class='wrapper'>
             <aside>
-                <div class="nav-wrapper">
-                    <header> {{ partial "header.html" . }} </header>
-                </div>
+                <nav class="nav">{{ partial "header.html" . }}</nav>
             </aside>
             <main> {{ block "main" .  }}{{ end }} </main>
         </div>

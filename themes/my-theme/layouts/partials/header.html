@@ -1,17 +1,31 @@
-<a href="/">✿ hilah.angelcities.net</a>
-<div class="details">
-    <span> hilah katherine t. </span>
-    <span> 26 / f / midwest, us </span>
-</div>
-<nav>
-
-    {{ $current := .RelPermalink}}
-    <ul>
-            {{ range (where .Site.RegularPages "Section" "project") }}
-                <li>
-                    <a class='{{ cond (eq $current .RelPermalink) "current" "" }}' href="{{ .RelPermalink }}">{{.Title | lower }}</a>
-                </li>
-            {{ end }}
+<a class="nav-brand" href="/">
+    <h1>⚘ hilah.angelcities.net</h1>
+</a>
+<ul class="nav-details">
+    <li>hilah katherine t.</li>
+    <li>26 / f / midwest, us.</li>
+</ul>
+{{ $current := .RelPermalink}}
+<div class="menu-wrapper">
+    <ul class="menu">
+        menu
+        <li class="menu-item">
+            <a class='menu-link {{ cond (eq $current "/") "current" "" }}' href="/">home</a>
+        </li>      
+        {{ range (where .Site.RegularPages "Section" "project") }}
+        <li class="menu-item">
+            <a class='menu-link {{ cond (eq $current .RelPermalink) "current" "" }}' href="{{ .RelPermalink }}">{{.Title | lower }}</a>
+        </li>
+        {{ end }}
     </ul>
 
-</nav>
+    <ul class="menu socials">
+        links
+        <li class="menu-item">
+            <a class='menu-link' href="https://proxygirl.bandcamp.com">music</a>
+        </li>  
+        <li class="menu-item">
+            <a class='menu-link' href="https://www.instagram.com/0x25f/">instagram</a>
+        </li>  
+    </ul>
+</div>

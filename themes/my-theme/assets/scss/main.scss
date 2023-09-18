@@ -1,68 +1,102 @@
-@import "abstracts/variables";
 @import "abstracts/mixins";
-@import "base/typography";
 @import "base/reset";
-@import "components/post";
-@import "layout/header";
 
-@import "pages/home";
-@import "pages/page";
-@import "pages/post";
+:root {
+    --padding: 1.5em;
+}
+
+::selection {
+    background: #ffb7b7; /* WebKit/Blink Browsers */
+  }
 
 html {
     @include flex(row, nowrap, start);
-    scroll-behavior: smooth;
-
+    // scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
     @include flex(column, nowrap, normal, normal, 1);
     min-height: 100vh;
     max-width: 786px;
-    // background: linear-gradient(to top, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
-    background-attachment: fixed;
 }
 
 .wrapper {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas:
-    "aside main";
+    @include flex(row, wrap, normal, normal, 1);
 }
 
-.nav-wrapper {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-}
-
-@media (max-width: 800px) {
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-    } 
-    .nav-wrapper {
-        position: initial;
-    }
-    
+main, aside {
+    padding: var(--padding);
 }
 
 aside {
-    background-color: white;
+    flex: 0 185px;
     border: 1px solid lightgray;
-    padding: 1.5em;
-    grid-area: aside;
-}
-
-header {
-    @include flex(column, nowrap, normal, normal, 1);
-    gap: 0.5em;
 }
 
 main {
-    padding: 1.5em;
-    grid-area: main;
+    @include flex(column, nowrap, normal, normal);
+    flex: 1 300px;
+    gap: 1.5em;    
+}
+
+.nav {
+    position: fixed;
+    @include flex(column, nowrap, normal, normal);
+    gap: 0.5em;
+    
+    a {
+        color: blue;
+    }
+
+    &-brand h1 {
+        font-size: 1.3em;
+        font-weight: normal;
+    }
+}
+
+.menu-wrapper {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid lightgrey;
+    padding-top: 1em;
+}
+
+@media(max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+        flex: initial;
+    }
+    main, aside {
+        flex: 1;
+    }
+    .nav {
+        position: initial;
+    }
+    .menu-wrapper {
+        flex-direction: row;
+    }
+}
+
+.menu {
+    &-item {
+        list-style: "❀";
+        color: blue;
+        list-style-position: inside;        
+    }
+    &-item:has(.current) {
+        list-style: "✿";
+        list-style-position: inside;        
+    }
+}
+
+.menu.socials {
+    .menu-item {
+        list-style: "๑";
+        color: blue;
+        list-style-position: inside;        
+    }
 }
 
 .project {
@@ -74,44 +108,41 @@ main {
 .project img {
     width: 100%;
     height: auto;
-    
-}
-
-nav > ul li {
-    list-style: "❀";
-    color: blue;
-    list-style-position: inside;
-}
-.current {
-    font-weight: bold;
-}
-
-nav a {
-
-}
-
-.details {
-    @include flex(column, nowrap, normal, normal, 1);    
-}
-
-.posts {
-    @include flex(column, nowrap, normal, normal, 1);
-    gap: 1em;
 }
 
 .post {
-    @include flex(column, nowrap, normal, normal, 1);
-    max-width: 400px; 
+    @include flex(column, nowrap, normal, normal);
     gap: 1em;
-    padding: 1em;
-    border: 1px solid lightgrey;
+
     &-header {
-        @include flex(row, nowrap, center, space-between, 1); 
+        @include flex(column-reverse, nowrap, normal, normal, 1); 
+        gap: 0.5em;
         border-bottom: 1px solid lightgrey;
         padding-bottom: 0.25em;
     }
-    &-main {
-        @include flex(column, nowrap, normal, normal, 1); 
-        gap: 1em;
+
+    &-date {
+        text-transform: lowercase;
+        color: grey;
     }
+
+    &-main {
+
+    }
+}
+
+.rich-text {
+    @include flex(column, nowrap, normal, normal, 1); 
+    gap: 1em;
+
+    p:has(img) {
+        @include flex(column, nowrap, center, normal);    
+        padding: 0.75em;
+        border: 1px solid lightgray;
+    }
+
+    img {
+        width: 100%;
+    }
+
 }

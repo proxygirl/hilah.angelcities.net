@@ -121,6 +121,7 @@ items:
     file: /uploads/bracelets/bracelet-02.jpg
   - title: '1'
     file: /uploads/bracelets/bracelet-01.jpg
+date: 2023-09-17T05:00:00.000Z
 ---
 
 an assortment of handmade bracelets.
