@@ -1,5 +1,5 @@
 baseURL = 'https://hilah-blog.netlify.app'
 languageCode = 'en-us'
-title = 'hilah'
+title = 'hilah.angelcities.net'
 theme = 'my-theme'
 assetDir = 'static'
