@@ -18,7 +18,7 @@ html {
 body {
     @include flex(column, nowrap, normal, normal, 1);
     min-height: 100vh;
-    max-width: 986px;
+    max-width: 786px;
     // background: linear-gradient(to top, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
     background-attachment: fixed;
 }
@@ -67,7 +67,7 @@ main {
 
 .project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
     gap: 1em;
 }
 
