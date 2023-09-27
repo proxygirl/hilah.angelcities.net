@@ -8,4 +8,5 @@
     <link rel="stylesheet" href="/css/normalize.css">
     {{ $style := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 </head>

@@ -8,10 +8,9 @@
 {{ $current := .RelPermalink}}
 <div class="menu-wrapper">
     <ul class="menu">
-        menu
         <li class="menu-item">
             <a class='menu-link {{ cond (eq $current "/") "current" "" }}' href="/">home</a>
-        </li>      
+        </li>           
         {{ range (where .Site.RegularPages "Section" "project") }}
         <li class="menu-item">
             <a class='menu-link {{ cond (eq $current .RelPermalink) "current" "" }}' href="{{ .RelPermalink }}">{{.Title | lower }}</a>
@@ -20,7 +19,6 @@
     </ul>
 
     <ul class="menu socials">
-        links
         <li class="menu-item">
             <a class='menu-link' href="https://proxygirl.bandcamp.com">music</a>
         </li>  

@@ -45,6 +45,11 @@ export const project: Collection = {
             type: "datetime",
             name: "date",
             label: "Date",
-          },          
+          }, 
+          {
+            type: "string",
+            name: "layout",
+            label: "Layout",
+          },                   
         ],
 }
